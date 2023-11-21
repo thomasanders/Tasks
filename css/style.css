@@ -1,17 +1,14 @@
 html {
-    box-sizing: border-box;
-   
-    
-  }
-  
-  *,
-  ::after,
-  ::before {
-    box-sizing: inherit;
-  }
-  .body {
-    font-family: 'Montserrat', sans-serif;
-    background: aquamarine;
-    margin: 0;
+  box-sizing: border-box;
+}
 
-  }
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #eee;
+  margin: 0;
+}
