@@ -2,7 +2,7 @@
 ## Description
 Application for adding tasks to list. 
 
-![Screen](https://github.com/AdrianKudzin/ToDoList/assets/106032420/407c6da8-018a-4d73-8d8f-45d827e86dfe)
+![Screen](https://github.com/thomasanders/Tasks/blob/main/images/screen.png)
 ## Technologies used in project:
 - HTML
 - CSS
