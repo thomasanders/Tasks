@@ -12,3 +12,21 @@
     padding: 10px;
     border-bottom: 1px solid #ddd;
 }
+
+.tasks__button {
+    border: none;
+    color: white;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+}
+.tasks__button--done {
+    background: hsl(120, 61%, 34%);
+}
+.tasks__content {
+
+}
+
+.tasks__content--done {
+    text-decoration: line-through;
+}
