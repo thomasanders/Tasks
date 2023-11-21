@@ -9,4 +9,4 @@ Application for adding tasks to list.
 - Javascript
 - BEM convention
 ## Demo
-https://adriankudzin.github.io/ToDoList/
+https://thomasanders.github.io/Tasks/
