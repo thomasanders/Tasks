@@ -1,0 +1,21 @@
+.form {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 20px;
+}
+
+.form_input {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.form__button {
+    padding: 10px;
+    background: hsl(180, 100%, 25%);
+    color: white;
+    border: none;
+
+}
+.form__button:hover {
+    background: hsl(180, 100%, 30%);
+}
