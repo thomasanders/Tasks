@@ -1,5 +1,4 @@
 {
-
   const tasks = [];
 
   const removeTask = (taskIndex) => {
@@ -18,14 +17,6 @@
     });
     render();
   };
-
-
-
- 
-
- 
-
- 
 
   const bindRemoveEvents = () => {
     const removeButtons = document.querySelectorAll(".js-remove");
