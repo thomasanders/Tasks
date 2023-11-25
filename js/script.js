@@ -1,11 +1,13 @@
 {
-  const tasks = [
-    { content: "download toDo List", done: true },
-    { content: "eat pierogi's", done: false },
-    { content: "buy Christmass gits", done: false },
+
+  const tasks = [];
+  // const tasks = [
+  //   { content: "download toDo List", done: true },
+  //   { content: "eat pierogi's", done: false },
+  //   { content: "buy Christmass gits", done: false },
     
 
-  ];
+  // ];
 
   const removeTask = (taskIndex) => {
     tasks.splice(taskIndex, 1);
