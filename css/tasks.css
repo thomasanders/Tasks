@@ -25,15 +25,12 @@
   padding: 0;
 }
 
-
 .tasks__button--toggleDone {
   background: hsl(120, 61%, 34%);
 }
 
-
-
 .tasks__button--toggleDone :active {
-  background: hsl(120, 61%, 54%);
+  background: hsl(120, 56%, 35%);
 }
 
 .tasks__button--toggleDone :hover {
