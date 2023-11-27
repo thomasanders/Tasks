@@ -1,4 +1,13 @@
 {
+
+  const tasks = [
+    { content: "download toDo List", done: true },
+    { content: "eat pierogi's", done: false },
+    { content: "buy Christmass gits", done: false },
+    
+
+  ];
+
   let task = [];
   let hiddenDoneTasks = false;
 
@@ -11,26 +20,32 @@
   };
 
 
-
-  const tasks = [
-    { content: "download toDo List", done: true },
-    { content: "eat pierogi's", done: false },
-    { content: "buy Christmass gits", done: false },
-    
-
-  ];
-
-
-
   const toggleTaskDone = (taskIndex) => {
-    tasks[taskIndex].done = !tasks[taskIndex].done;
+    tasks = [
+      ...tasks.slice(0, taskIndex),
+      {
+        ...tasks[taskIndex],
+        done: !tasks[taskIndex].done,
+      },
+      ...tasks.slice(taskIndex + 1),
+    ];
     render();
   };
 
   const addNewTask = (newTaskContent) => {
-    tasks.push({
-      content: newTaskContent,
-    });
+   tasks = [...tasks, { content: newTaskContent}];
+    render();
+  };
+
+  const markAllTaskDone = () => {
+    tasks = tasks.map((task) => ({
+      ...task,
+      done: true,
+    }));
+  };
+
+  const toggleHideDoneTasks = () => {
+    hidedoneTasks = !hidedoneTasks;
     render();
   };
 
