@@ -30,7 +30,7 @@
 }
 
 .tasks__button--toggleDone :active {
-  background: hsl(120, 56%, 35%);
+  background: hsl(120, 61%, 35%);
 }
 
 .tasks__button--toggleDone :hover {
