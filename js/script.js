@@ -1,11 +1,5 @@
 {
-  // const tasks = [
-  //   { content: "download toDo List", done: true },
-  //   { content: "eat pierogi's", done: false },
-  //   { content: "buy Christmass gits", done: false },
-  // ];
-
-  let task = [];
+  let tasks = [];
   let hideDoneTasks = false;
 
   const removeTask = (taskIndex) => {
@@ -35,6 +29,8 @@
       ...task,
       done: true,
     }));
+
+    render();
   };
 
   const toggleHideDoneTasks = () => {
@@ -63,21 +59,23 @@
   };
 
   const renderTasks = () => {
-    const taskToHTML = (task = `
-        <li class="tasks__item ${
+    const taskToHTML = task = `
+        <li class="
+        tasks__item${
           task.done && hideDoneTasks ? " task__item--hidden" : ""
-        } js-task">
+        } js-task
+        ">
         <button class="tasks__button tasks__button--toggleDone js-toggleDone">
         ${task.done ? "✔" : ""}
         </button>
-        <span class="tasks__content ${
+        <span class="tasks__content${
           task.done ? "tasks__content--done" : ""
         }">${task.content}</span>
         <button class="tasks__button tasks__button--remove js-remove">
         🗑️
         </button>
         </li>
-      `);
+      `;
 
     const tasksElement = document.querySelectorAll(".js-tasks");
     tasksElement.innerHTML = tasks.map(taskToHTML).join("");
@@ -103,10 +101,10 @@
       `;
   };
   const bindButtonsEvents = () => {
-    const markAllTaskDoneButton = document.querySelectorAll(".js-markAllDone");
+    const markAllDoneButton = document.querySelectorAll(".js-markAllDone");
 
-    if (markAllTaskDoneButton) {
-      markAllTaskDoneButton.addEventListener("click", markAllTaskDone);
+    if (markAllDoneButton) {
+      markAllDoneButton.addEventListener("click", markAllTaskDone);
     }
 
     const toggleHideDoneTasksButton = document.querySelectorAll(
