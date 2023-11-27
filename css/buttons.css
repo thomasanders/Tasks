@@ -1,6 +1,7 @@
 .buttons {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: flex-end;
 }
 
 .buttons__button {
@@ -9,16 +10,15 @@
     border: none;
     margin: 0 0 0 20px;
     transition: color 0.3s;
-    
 }
 
-@media (max-width: 767px){
-    .buttons__button{
+@media(max-width: 767px) {
+    .buttons__button {
         flex-basis: 100%;
         margin: 10px;
-
     }
 }
+
 .buttons__button:hover {
     color: hsl(180, 100%, 35%);
 }

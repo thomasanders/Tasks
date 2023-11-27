@@ -2,13 +2,15 @@ html {
   box-sizing: border-box;
 }
 
-*,
-::after,
-::before {
+*, ::after, ::before {
   box-sizing: inherit;
 }
+
 body {
-  font-family: "Montserrat", sans-serif;
-  background: #eee;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #eee;
   margin: 0;
 }
+
+
+

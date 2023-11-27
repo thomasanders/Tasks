@@ -5,12 +5,18 @@
 }
 
 .tasks__item {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  grid-gap: 10px;
-  align-items: center;
   padding: 10px;
   border-bottom: 1px solid #ddd;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  grid-gap: 10px;
+}
+
+
+.tasks__item--done {
+  word-break: break-word;
+  text-decoration: line-through;
 }
 
 .tasks__item--hidden {
@@ -22,35 +28,31 @@
 }
 
 .tasks__button {
-  border: none;
-  color: rgb(255, 255, 255);
   width: 30px;
   height: 30px;
+  color:white;
+  border: none;
   padding: 0;
-  transition: background 0.3s;
+  transition:  background 0.5s;
+  background-color: green;
 }
 
-.tasks__button--toggleDone {
-  background: hsl(120, 61%, 34%);
-}
-.tasks__button--toggleDone :hover {
-  background: hsl(120, 61%, 54%);
+.tasks__button:hover {
+  background-color: rgb(0, 157, 0);
 }
 
-.tasks__button--toggleDone :active {
-  background: hsl(120, 61%, 35%);
+.tasks__button:active {
+  background-color: rgb(0, 186, 0);
 }
-
-
 
 .tasks__button--remove {
-  background: hsl(348, 83%, 47%);
+  background-color: rgb(212, 19, 19);
 }
 
 .tasks__button--remove:hover {
-  background: hsl(348, 83%, 57%);
+  background-color: rgb(230, 11, 11);
 }
 
 .tasks__button--remove:active {
-  background: hsl(348, 83%, 57%);
+  background-color: rgb(255, 0, 0);
 }
