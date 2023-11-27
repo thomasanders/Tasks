@@ -59,7 +59,7 @@
   };
 
   const renderTasks = () => {
-    const taskToHTML = task = `
+    const taskToHTML = task => `
         <li class="
         tasks__item${
           task.done && hideDoneTasks ? " task__item--hidden" : ""
