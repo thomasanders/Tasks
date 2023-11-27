@@ -1,0 +1,16 @@
+.main {
+    display: grid;
+    justify-content: center;
+    grid-gap: 20px;
+}
+
+@media (max-width: 700px) {
+    .main {
+        grid-template-columns: 350px;
+    }
+}
+
+.main__title {
+    margin-top: 50px;
+    margin-bottom: 0px;
+}

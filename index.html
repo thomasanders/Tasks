@@ -4,45 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
-        integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+    <title>Lista Zadań</title>
+    <meta property="og:image" content="images/todolist.png">
+    <link rel="icon" href="images/todolist.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/buttons.css" rel="stylesheet">
+    <link href="css/task.css" rel="stylesheet">
     <link href="css/form.css" rel="stylesheet">
     <link href="css/section.css" rel="stylesheet">
-    <link href="css/tasks.css" rel="stylesheet">
-    <title>To Do List</title>
+    <link href="css/main.css" rel="stylesheet">
     <script src="js/script.js" defer></script>
 </head>
 
-<body>
-    <main class="container">                                                         
-        <header>
-            <h1 class="mainHeader">Task List</h1>
-        </header>
-        <section class="section">
-            <h3 class="section__header">Add new task</h3>
-            <div class="section__field">
-                <form class="form js-form">
-                    <input class="form__input js-newTask" placeholder="add new task" required>
-                    <button class="form__button">Add task</button>
+<body class="body">
+    <main class="main">
+        <h1 class="main__title">Lista Zadań</h1>
+        <div class="section">
+            <h2 class="section__header">Dodaj nowe zadanie</h2>
+            <div class="section__main">
+                <form class="js-form form">
+                    <input class="js-newTask form__newTask" placeholder="Co jest do zrobienia?" name="To do" type="text"
+                        autocomplete="off">
+                    <button class="form__button">Dodaj zadanie</button>
                 </form>
             </div>
-        </section>
-        <section class="section">
-            <div class="section__bar">
-                    <h3 class="section__header">Task List</h3>
-                    <span class="js-buttons buttons"></span>
+        </div>
+        <div class="section">
+            <div class="section__header section__headerSecondary">
+                <h2>Lista Zadań</h2>
+                <div class="task__newButtons js-newButtons"></div>
             </div>
-            <div class="section__field">
-                <ul class="tasks js-tasks">
-                </ul>
+            <div class="section__main">
+                <ul class="js-tasks task__list"></ul>
             </div>
-        </section>
+        </div>
     </main>
-
 </body>
 
 </html>
