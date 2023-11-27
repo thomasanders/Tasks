@@ -1,4 +1,15 @@
 {
+  let task = [];
+  let hiddenDoneTasks = false;
+
+  const removeTask = (taskIndex) =>{
+    tasks = [
+      ...tasks.slice(0, taskIndex),
+      ...tasks.slice(taskIndex + 1),
+    ];
+    render();
+  };
+
 
 
   const tasks = [
@@ -9,10 +20,7 @@
 
   ];
 
-  const removeTask = (taskIndex) => {
-    tasks.splice(taskIndex, 1);
-    render();
-  };
+
 
   const toggleTaskDone = (taskIndex) => {
     tasks[taskIndex].done = !tasks[taskIndex].done;
